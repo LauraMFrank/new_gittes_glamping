@@ -1,0 +1,4 @@
+/* IMPORTERE BASE.CSS SIDEN */
+/* SENDER DET VIDERE TIL INDEX.CSS SIDEN */
+
+@import './base/base.css'

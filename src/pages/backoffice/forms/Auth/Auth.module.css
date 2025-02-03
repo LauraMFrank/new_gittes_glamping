@@ -1,0 +1,39 @@
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.contactForm form button {
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.contactForm form input {
+  width: 100%;
+  padding: 10px;
+}
+
+.loginDiv {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

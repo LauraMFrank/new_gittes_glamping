@@ -1,0 +1,25 @@
+body {
+    background-color: #CDD3CD;
+}
+
+.headerContainer { 
+    position: relative;
+    background-image: url(public/assets/image_01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    z-index: 2;
+}
+
+.headerContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2d2d2d9d; /* Add a dark overlay for better text visibility */
+    z-index: 1;
+    }
+

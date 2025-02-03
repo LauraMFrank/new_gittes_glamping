@@ -1,0 +1,180 @@
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20vh;
+  margin-block: 40px;
+  background-color: #CDD3CD;
+  color: white;
+}
+
+.cardContent {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.headerSection {
+  background-color: #d2b48c;
+  margin-inline: 10vw;
+  padding-block: 30px;
+  padding-inline: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'zen loop';
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: 999;
+  position: relative;
+}
+
+.headerSection h2 {
+  font-size: 80px;
+  
+}
+
+.headerSection p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-family: 'Nanum Gothic';
+}
+
+.imageSection img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  z-index: 2;
+  margin-top: -60px;
+  position: relative;
+}
+
+.buttonSection {
+  background-color: #89a2a3;
+  text-align: center;
+  padding-block: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  z-index: 999;
+  margin-top: -40px;
+  position: relative;
+  margin-inline: 20vw;
+}
+
+.buttonSection button {
+  background: none;
+  border: none;
+  font-size: 40px;
+  font-family: 'zen loop';
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttonSection button:hover {
+  text-decoration: underline;
+}
+
+/* Detail View */
+.detailFullScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #33616C;
+  color: #fff;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.detailheader h2 {
+  margin-top: 10vh;
+  font-family: 'zen loop';
+  font-size: 30px;
+}
+
+.detailContent {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.detailContent h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.detailContent p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.includes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.detailImage {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.backButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Nanum Gothic';
+}
+
+.backButton:hover {
+  background-color: #c9302c;
+}
+
+
+.buttondetailSection {
+  background-color: #89a2a3;
+  text-align: center;
+  padding: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+
+}
+
+.buttondetailSection button {
+  background: none;
+  border: none;
+  font-size: 40px;
+  font-family: 'zen loop';
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttondetailSection button:hover {
+  text-decoration: underline;
+}

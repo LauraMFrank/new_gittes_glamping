@@ -1,0 +1,4 @@
+/* IMPORTERE MAIN.CSS SIDEN */
+/* SENDER VIDERE TIL MAIN.JSX */
+
+@import "./styles/main.css"

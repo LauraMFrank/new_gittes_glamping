@@ -1,0 +1,86 @@
+/* Mobile-first */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    color: white;  
+    position: relative; /* Add this to make z-index work within the navbar */
+}
+  
+.navLogo {
+    width: 10%;
+    cursor: pointer;
+    z-index: 1000;
+    position: relative;
+}
+  
+.hamburger {
+    width: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1000; /* Ensures the hamburger and X icons are on top of everything */
+    position: relative; /* Ensure it respects the z-index */
+}
+  
+.navLinks {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #222222d1;
+    padding: 1rem;
+    padding-top: 10rem;
+    text-align: center;
+    z-index: 999; /* Position the menu behind the hamburger/X */
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+    }
+}
+  
+.navLinks.open {
+    display: flex;
+}
+
+  
+/* Desktop */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+  
+    .navLinks {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        height: 2rem;
+        background-color: transparent;
+        padding: 0;
+        gap: 4rem;
+        margin-right: 0;
+        
+        a {
+            font-size: 18px;
+        }
+    }
+
+    .navLogo {
+        width: 10%;
+        margin-left: 0;
+    }
+}
+  

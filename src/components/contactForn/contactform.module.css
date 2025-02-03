@@ -1,0 +1,84 @@
+body {
+  background-color: #306d7c;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 400px;
+    margin: 10vh auto;
+    text-align: center;
+  }
+  
+  .contactForm label {
+    font-size: 25px;
+    font-family: 'zen loop';
+    color: #fff;
+    background-color: transparent;
+    padding-bottom: 20px;
+    line-height: 5vh;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    font-size: 22px;
+    font-family: 'Nanum Gothic';
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    background-color: #306d7c;
+  }
+ 
+  .contactForm button {
+    background-color: #52796f;
+    color: #fff;
+    border: none;
+    padding: 25px 30px;
+    font-size: 22px;
+    font-family: 'zen loop';
+    border-radius: 50px 0 50px 0;
+    cursor: pointer;
+  }
+  
+  .contactForm button:hover {
+    background-color: #354f52;
+  }
+  
+  .successPopup,
+  .errorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #294F56;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .successPopup p,
+  .errorPopup p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .successPopup button,
+  .errorPopup button {
+    margin-top: 10px;
+    background-color: #829B97;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50% 0 50% 0;
+    cursor: pointer;
+  }
+  
+  .successPopup button:hover,
+  .errorPopup button:hover {
+    background-color: #294750;
+  }
+  

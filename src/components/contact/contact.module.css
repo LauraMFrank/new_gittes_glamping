@@ -1,0 +1,53 @@
+body {
+    background-color: #CDD3CD;
+}
+
+.headerContainer { 
+    position: relative;
+    background-image: url(public/assets/image_03.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    z-index: 2;
+}
+
+.headerContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2d2d2d9d; /* Add a dark overlay for better text visibility */
+    z-index: 1;
+    }
+
+  
+  /* Indholdstekst */
+  .content {
+    position: relative;
+    margin-top: -100px;
+    background-color: #306d7c;
+    color: white;
+    padding: 30px;
+    border-top-left-radius: 50px;
+    text-align: center;
+    max-width: 100vw;
+    z-index: 3;
+  }
+  
+  .content h2 {
+    font-size: 75px;
+    font-family: 'zen loop';
+    margin: 10px 0;
+    font-weight: normal;
+  }
+  
+  .content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+  }
+  

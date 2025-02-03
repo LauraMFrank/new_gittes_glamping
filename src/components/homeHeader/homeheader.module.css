@@ -1,0 +1,72 @@
+
+.headerContainer {
+    position: relative;
+    background-image: url(public/assets/image_00.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    z-index: 2;
+}
+
+.headerContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2d2d2d9d; /* Add a dark overlay for better text visibility */
+    z-index: 1;
+    }
+
+header {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ensure the text is above any other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 2px;
+
+        img {
+           width: 72px;
+        } 
+    h1{
+        font-family: 'zen loop';
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 72px;
+    } 
+    p{
+        font-family: 'zen loop';
+        font-weight: 400;
+        font-size: 98px;
+        line-height: 50px;
+
+    }
+    
+    button {
+        font-family: 'zen loop';
+        font-size: 48px;
+        font-weight: 400;
+        color: white;
+        border: white solid 1px;
+        padding-block: 10px;
+        padding-inline: 85px;
+        border-radius: 50px 0px 50px 0px;
+        background-color: transparent;
+        margin-top: 70px;
+    }
+    button:hover{
+            background-color: palevioletred;
+        }
+}
+
+
+
+
+
+
