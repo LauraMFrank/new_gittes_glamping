@@ -43,6 +43,7 @@ function App() {
     <>
       
       <div>{routes}</div>
+      <p>test</p>
       
       {/* Footer will always render */}
       <Footer />
